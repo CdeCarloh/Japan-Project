@@ -1,0 +1,21 @@
+.nav-background {
+  background-color: #B30000;
+}
+
+.nav-container {
+  width: 1200px;
+  padding: 5px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-item {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
