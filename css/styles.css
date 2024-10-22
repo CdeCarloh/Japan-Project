@@ -1,21 +1,66 @@
-.nav-background {
-  background-color: #B30000;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: 0px;
+}
+
+body {
+  font-family: 'Arima';
+}
+
+header {
+  background-color: #dedede;
+  padding: 14px;
 }
 
 .nav-container {
-  width: 1200px;
-  padding: 5px;
-  margin-top: 0px;
-  margin-right: auto;
-  margin-bottom: 0px;
-  margin-left: auto;
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.nav-item {
-  color: aliceblue;
+.nav-container a {
   text-decoration: none;
-  font-size: 15px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: black;
+}
+
+.banner-image {
+  background-image: url('../img/mount-fuji.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.banner-image h1,h2 {
+  text-align: center;
+  color: aliceblue;
+}
+
+.introduction-container {
+  background-color: #dedede;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.introduction-container p {
+  width: 50%;
+  color: black;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.introduction-container img {
+  border-color: aliceblue;
+  border-width: 5px;
+  border-style: solid;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
