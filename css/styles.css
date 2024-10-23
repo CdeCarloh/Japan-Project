@@ -25,6 +25,10 @@ header {
   color: black;
 }
 
+.nav-container a:hover {
+  text-decoration: underline;
+}
+
 .banner-image {
   background-image: url('../img/mount-fuji.jpg');
   background-size: cover;
@@ -78,6 +82,12 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.icons-hover:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+  color: #a00e0e;
 }
 
 main h2 {
