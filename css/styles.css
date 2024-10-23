@@ -1,7 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: 0px;
+  box-sizing: border-box;
 }
 
 body {
@@ -36,7 +36,12 @@ header {
   justify-content: center;
 }
 
-.banner-image h1,h2 {
+.banner-image h1 {
+  text-align: center;
+  color: aliceblue;
+}
+
+.banner-image h2 {
   text-align: center;
   color: aliceblue;
 }
@@ -52,7 +57,6 @@ header {
 
 .introduction-container p {
   width: 50%;
-  color: black;
   text-align: center;
   margin-right: 20px;
 }
@@ -62,5 +66,83 @@ header {
   border-width: 5px;
   border-style: solid;
   margin-top: 20px;
+  margin-bottom: 20px;
+  width: 250px;
+  height: 325px;
+}
+
+.icons-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+main h2 {
+  margin-top: 50px;
+  margin-left: 124px;
+  margin-bottom: 20px;
+}
+
+.osaka-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.osaka-container p {
+  width: 50%;
+  text-align: center;
+}
+
+.osaka-container img {
+  width: 380px;
+  height: 250px;
+  margin-bottom: 20px;
+}
+
+.itomori-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.itomori-container p {
+  width: 50%;
+  text-align: center;
+  margin-right: 16px;
+}
+
+.itomori-container img {
+  width: 380px;
+  height: 250px;
+  margin-bottom: 20px;
+}
+
+.kumano-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.kumano-container p {
+  width: 50%;
+  text-align: center;
+  margin-left: 16px;
+}
+
+.kumano-container img {
+  width: 380px;
+  height: 250px;
+  margin-top: 20px;
+  margin-left: 10px;
   margin-bottom: 20px;
 }
