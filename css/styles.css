@@ -61,10 +61,10 @@ header {
 }
 
 .introduction-container p {
-  width: 60%;
+  width: 70%;
   text-align: center;
-  margin-right: 20px;
-  font-size: 11px;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .introduction-container img {
@@ -73,7 +73,7 @@ header {
   border-style: solid;
   margin-top: 20px;
   margin-bottom: 20px;
-  width: 30%;
+  width: 70%;
 }
 
 .icons-container {
@@ -88,18 +88,18 @@ header {
 .icons-hover {
   width: 50px;
   height: 50px;
+  transition: transform 0.3s ease;
 }
 
 .icons-hover:hover {
   transform: scale(1.2);
-  transition: transform 0.3s ease;
   color: #a00e0e;
 }
 
 main h2 {
   margin-top: 50px;
-  margin-left: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .osaka-container {
@@ -111,18 +111,17 @@ main h2 {
 }
 
 .osaka-container p {
-  width: 50%;
+  width: 70%;
   text-align: center;
-  font-size: 10px;
+  font-size: 16px;
 }
 
 .osaka-container img {
+  width: 70%;
   margin-bottom: 20px;
-  width: 40%;
-  margin-right: 10px;
 }
 
-.itomori-container {
+.itomori-container-mobile {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -130,17 +129,20 @@ main h2 {
   align-items: center;
 }
 
-.itomori-container p {
-  width: 50%;
-  text-align: center;
-  font-size: 10px;
-  margin-right: 10px;
+.itomori-container {
+  display: none;
 }
 
-.itomori-container img {
+.itomori-container-mobile p {
+  width: 70%;
+  text-align: center;
+  font-size: 16px;
+}
+
+.itomori-container-mobile img {
+  width: 70%;
+  margin-top: 20px;
   margin-bottom: 20px;
-  width: 40%;
-  margin-top: 10px;
 }
 
 .kumano-container {
@@ -152,16 +154,15 @@ main h2 {
 }
 
 .kumano-container p {
-  width: 50%;
+  width: 70%;
   text-align: center;
-  margin-left: 10px;
-  font-size: 10px;
-  margin-bottom: 20px;
+  font-size: 16px;
 }
 
 .kumano-container img {
+  margin-top: 20px;
   margin-bottom: 20px;
-  width: 40%;
+  width: 70%;
 }
 
 #gallery-title {
@@ -186,6 +187,11 @@ main h2 {
   border-color: aliceblue;
   border-width: 5px;
   border-style: solid;
+  transition: 0.3s ease;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.2);
 }
 
 footer p {
@@ -207,23 +213,80 @@ footer p {
   align-items: center;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-}
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .introduction-container p {
+    width: 70%;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .introduction-container img {
+    border-color: aliceblue;
+    border-width: 5px;
+    border-style: solid;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 40%;
+  }
+
+  .icons-hover {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
+  }
+
+  .osaka-container p {
+    width: 70%;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .osaka-container img {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+
+  .itomori-container {
+    display: none;
+  }
+
+  .itomori-container-mobile p {
+    width: 70%;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .itomori-container-mobile img {
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .kumano-container p {
+    width: 70%;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .kumano-container img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 70%;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+
   .introduction-container p {
     width: 50%;
     text-align: center;
-    margin-right: 20px;
+    margin-left: 20px;
     font-size: 16px;
   }
-  
+
   .introduction-container img {
     border-color: aliceblue;
     border-width: 5px;
@@ -235,12 +298,7 @@ footer p {
   .icons-hover {
     width: 75px;
     height: 75px;
-  }
-
-  main h2 {
-    margin-top: 50px;
-    margin-left: 30px;
-    margin-bottom: 20px;
+    transition: transform 0.3s ease;
   }
 
   .osaka-container p {
@@ -248,11 +306,27 @@ footer p {
     text-align: center;
     font-size: 16px;
   }
-  
+
   .osaka-container img {
-    margin-bottom: 20px;
-    margin-right: 10px;
     width: 40%;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+
+  .itomori-container-mobile {
+    display: none;
+  }
+
+  .itomori-container {
+    display: block;
+  }
+
+  .itomori-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 
   .itomori-container p {
@@ -260,11 +334,11 @@ footer p {
     text-align: center;
     font-size: 16px;
   }
-  
+
   .itomori-container img {
-    margin-bottom: 20px;
-    margin-right: 10px;
     width: 40%;
+    margin-top: 20px;
+    margin-left: 20px;
   }
 
   .kumano-container p {
@@ -272,34 +346,15 @@ footer p {
     text-align: center;
     font-size: 16px;
   }
-  
+
   .kumano-container img {
-    margin-right: 10px;
     width: 40%;
+    margin-right: 20px;
   }
 
   footer p {
     font-size: 12px;
   }
-  
-  #footer-title {
-    margin-bottom: 10px;
-  }
-  
-  .footer-container {
-    padding: 25px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -307,28 +362,23 @@ footer p {
   .introduction-container p {
     width: 50%;
     text-align: center;
-    margin-right: 20px;
+    margin-left: 20px;
     font-size: 16px;
   }
-  
+
   .introduction-container img {
     border-color: aliceblue;
     border-width: 5px;
     border-style: solid;
     margin-top: 20px;
     margin-bottom: 20px;
-    height: 400px;
+    width: 20%;
   }
 
   .icons-hover {
     width: 75px;
     height: 75px;
-  }
-
-  main h2 {
-    margin-top: 50px;
-    margin-left: 124px;
-    margin-bottom: 20px;
+    transition: transform 0.3s ease;
   }
 
   .osaka-container p {
@@ -336,11 +386,27 @@ footer p {
     text-align: center;
     font-size: 16px;
   }
-  
+
   .osaka-container img {
+    width: 40%;
     margin-bottom: 20px;
-    margin-right: 10px;
-    width: 30%;
+    margin-right: 20px;
+  }
+
+  .itomori-container-mobile {
+    display: none;
+  }
+
+  .itomori-container {
+    display: block;
+  }
+
+  .itomori-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 
   .itomori-container p {
@@ -348,11 +414,11 @@ footer p {
     text-align: center;
     font-size: 16px;
   }
-  
+
   .itomori-container img {
-    margin-bottom: 20px;
-    margin-left: 10px;
-    width: 30%;
+    width: 40%;
+    margin-top: 20px;
+    margin-left: 20px;
   }
 
   .kumano-container p {
@@ -360,28 +426,9 @@ footer p {
     text-align: center;
     font-size: 16px;
   }
-  
-  .kumano-container img {
-    margin-right: 10px;
-    width: 30%;
-  }
 
-  footer p {
-    font-size: 12px;
-  }
-  
-  #footer-title {
-    margin-bottom: 10px;
-  }
-  
-  .footer-container {
-    padding: 25px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+  .kumano-container img {
+    width: 40%;
+    margin-right: 20px;
   }
 }
