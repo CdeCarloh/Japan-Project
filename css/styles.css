@@ -157,7 +157,7 @@ main h2 {
   margin-bottom: 20px;
 }
 
-#gallery {
+#gallery-title {
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
@@ -181,4 +181,22 @@ main h2 {
   border-color: aliceblue;
   border-width: 5px;
   border-style: solid;
+}
+
+footer p {
+  font-size: 12px;
+}
+
+#footer-title {
+  margin-bottom: 10px;
+}
+
+.footer-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
