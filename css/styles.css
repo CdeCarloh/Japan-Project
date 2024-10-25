@@ -216,7 +216,6 @@ footer p {
 .button-up {
   width: 30px;
   height: 30px;
-  outline: 0;
   border-radius: 50%;
   border: 1px solid #a00e0e;
   background-color: #a00e0e;
@@ -302,7 +301,6 @@ footer p {
   .button-up {
     width: 30px;
     height: 30px;
-    outline: 0;
     border-radius: 50%;
     border: 1px solid #a00e0e;
     background-color: #a00e0e;
@@ -406,7 +404,6 @@ footer p {
   .button-up {
     width: 40px;
     height: 40px;
-    outline: 0;
     border-radius: 50%;
     border: 1px solid #a00e0e;
     background-color: #a00e0e;
@@ -510,7 +507,6 @@ footer p {
   .button-up {
     width: 40px;
     height: 40px;
-    outline: 0;
     border-radius: 50%;
     border: 1px solid #a00e0e;
     background-color: #a00e0e;

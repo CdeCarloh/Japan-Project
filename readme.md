@@ -4,6 +4,10 @@
 
 Hello Japan is a website designed as a wiki for those interested in traveling to Japan. Its purpose is to provide practical and useful information for travelers.
 
+## Inspiration
+
+https://dribbble.com/shots/22887250-National-Park-Website
+
 ## Build With
 
 - **HTML5**: For content structure and semantic elements.
