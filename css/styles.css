@@ -214,15 +214,18 @@ footer p {
 }
 
 .button-up {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   outline: 0;
   border-radius: 50%;
   border: 1px solid #a00e0e;
   background-color: #a00e0e;
   position: fixed;
   right: 20px;
-  left: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: end;
   bottom: 50px;
   transition: 0.3s ease;
   cursor: pointer;
@@ -230,7 +233,7 @@ footer p {
 
 .button-svg {
   color: aliceblue;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .button-up:hover {
@@ -298,6 +301,33 @@ footer p {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 70%;
+  }
+
+  .button-up {
+    width: 30px;
+    height: 30px;
+    outline: 0;
+    border-radius: 50%;
+    border: 1px solid #a00e0e;
+    background-color: #a00e0e;
+    position: fixed;
+    right: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+    bottom: 50px;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+
+  .button-svg {
+    color: aliceblue;
+    font-size: 16px;
+  }
+
+  .button-up:hover {
+    background-color: #d12424;
   }
 }
 
@@ -375,6 +405,29 @@ footer p {
     width: 40%;
     margin-right: 20px;
   }
+
+  .button-up {
+    width: 40px;
+    height: 40px;
+    outline: 0;
+    border-radius: 50%;
+    border: 1px solid #a00e0e;
+    background-color: #a00e0e;
+    position: fixed;
+    right: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+    bottom: 50px;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+
+  .button-svg {
+    color: aliceblue;
+    font-size: 18px;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -450,5 +503,32 @@ footer p {
   .kumano-container img {
     width: 40%;
     margin-right: 20px;
+  }
+
+  .button-up {
+    width: 40px;
+    height: 40px;
+    outline: 0;
+    border-radius: 50%;
+    border: 1px solid #a00e0e;
+    background-color: #a00e0e;
+    position: fixed;
+    right: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+    bottom: 50px;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+
+  .button-svg {
+    color: aliceblue;
+    font-size: 18px;
+  }
+
+  .button-svg:hover {
+    background-color: #d12424;
   }
 }

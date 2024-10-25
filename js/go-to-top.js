@@ -1,7 +1,7 @@
 window.onscroll = function () {
   const BUTTON_UP = document.getElementById("up");
 
-  if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500) {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
     BUTTON_UP.style.display = "block";
   } else {
     BUTTON_UP.style.display = "none";
