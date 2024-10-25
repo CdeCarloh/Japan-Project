@@ -6,6 +6,13 @@ window.onscroll = function () {
   } else {
     BUTTON_UP.style.display = "none";
   }
+
+  const footer = document.querySelector('.footer-container');
+  const footerPosition = footer.getBoundingClientRect().top;
+
+  if (footerPosition < window.innerHeight) {
+    BUTTON_UP.style.display = "none";
+  }
 };
 
 function scrollToTop() {
