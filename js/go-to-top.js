@@ -7,10 +7,10 @@ window.onscroll = function () {
     BUTTON_UP.style.display = "none";
   }
 
-  const footer = document.querySelector('.footer-container');
-  const footerPosition = footer.getBoundingClientRect().top;
+  const FOOTER = document.querySelector('.footer-container');
+  const FOOTER_POSITION = FOOTER.getBoundingClientRect().top;
 
-  if (footerPosition < window.innerHeight) {
+  if (FOOTER_POSITION < window.innerHeight) {
     BUTTON_UP.style.display = "none";
   }
 };

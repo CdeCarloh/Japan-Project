@@ -231,13 +231,9 @@ footer p {
   cursor: pointer;
 }
 
-.button-svg {
+#button-hover {
   color: aliceblue;
   font-size: 16px;
-}
-
-.button-up:hover {
-  background-color: #d12424;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -321,22 +317,14 @@ footer p {
     cursor: pointer;
   }
 
-  .button-svg {
+  #button-hover {
     color: aliceblue;
     font-size: 16px;
-  }
-
-  .button-up:hover {
-    background-color: #d12424;
   }
 
   .footer-container {
     flex-direction: row;
     justify-content: space-around;
-  }
-
-  .footer-container div {
-    width: 18%;
   }
 }
 
@@ -433,21 +421,14 @@ footer p {
     cursor: pointer;
   }
 
-  .button-svg {
+  #button-hover {
     color: aliceblue;
-    font-size: 18px;
-  }
-
-  .button-svg:hover {
-    background-color: #d12424;
+    font-size: 16px;
   }
 
   .footer-container {
-    padding: 20px;
-  }
-
-  .footer-container div {
-    width: 15%;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 
@@ -544,28 +525,13 @@ footer p {
     cursor: pointer;
   }
 
-  .button-svg {
+  #button-hover {
     color: aliceblue;
-    font-size: 18px;
-  }
-
-  .button-svg:hover {
-    background-color: #d12424;
-  }
-
-  footer p {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .footer-container {
-    padding: 25px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    justify-content: space-around;
   }
 }
