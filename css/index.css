@@ -4,12 +4,19 @@
   box-sizing: border-box;
 }
 
+:root {
+  --paper: #dedede;
+  --white: aliceblue;
+  --red: #a00e0e;
+  --black: black;
+}
+
 body {
   font-family: 'Arima';
 }
 
 header {
-  background-color: #dedede;
+  background-color: var(--paper);
   padding: 14px;
 }
 
@@ -22,7 +29,7 @@ header {
 
 .nav-container a {
   text-decoration: none;
-  color: black;
+  color: var(--black);
 }
 
 .nav-container a:hover {
@@ -42,16 +49,16 @@ header {
 
 .banner-image h1 {
   text-align: center;
-  color: aliceblue;
+  color: var(--white);
 }
 
 .banner-image h2 {
   text-align: center;
-  color: aliceblue;
+  color: var(--black);
 }
 
 .introduction-container {
-  background-color: #dedede;
+  background-color: var(--paper);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -67,7 +74,7 @@ header {
 }
 
 .introduction-container img {
-  border-color: aliceblue;
+  border-color: var(--white);
   border-width: 5px;
   border-style: solid;
   margin-top: 20px;
@@ -92,7 +99,7 @@ header {
 
 .icons-hover:hover {
   transform: scale(1.2);
-  color: #a00e0e;
+  color: var(--red);
 }
 
 main h2 {
@@ -171,7 +178,7 @@ main h2 {
 }
 
 .gallery-container {
-  background-color: #dedede;
+  background-color: var(--paper);
   width: 100%;
   gap: 15px;
   display: flex;
@@ -183,7 +190,7 @@ main h2 {
 }
 
 .gallery-container img {
-  border-color: aliceblue;
+  border-color: var(--white);
   border-width: 5px;
   border-style: solid;
   transition: 0.3s ease;
@@ -217,8 +224,8 @@ footer p {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 1px solid #a00e0e;
-  background-color: #a00e0e;
+  border: 1px solid var(--red);
+  background-color: var(--red);
   position: fixed;
   right: 20px;
   display: flex;
@@ -231,7 +238,7 @@ footer p {
 }
 
 #button-hover {
-  color: aliceblue;
+  color: var(--white);
   font-size: 16px;
 }
 
@@ -245,7 +252,7 @@ footer p {
   }
 
   .introduction-container img {
-    border-color: aliceblue;
+    border-color: var(--white);
     border-width: 5px;
     border-style: solid;
     margin-top: 20px;
@@ -302,8 +309,8 @@ footer p {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: 1px solid #a00e0e;
-    background-color: #a00e0e;
+    border: 1px solid var(--red);
+    background-color: var(--red);
     position: fixed;
     right: 20px;
     display: flex;
@@ -316,7 +323,7 @@ footer p {
   }
 
   #button-hover {
-    color: aliceblue;
+    color: var(--white);
     font-size: 16px;
   }
 
@@ -337,7 +344,7 @@ footer p {
   }
 
   .introduction-container img {
-    border-color: aliceblue;
+    border-color: var(--white);
     border-width: 5px;
     border-style: solid;
     margin-top: 20px;
@@ -405,8 +412,8 @@ footer p {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 1px solid #a00e0e;
-    background-color: #a00e0e;
+    border: 1px solid var(--red);
+    background-color: var(--red);
     position: fixed;
     right: 20px;
     display: flex;
@@ -419,7 +426,7 @@ footer p {
   }
 
   #button-hover {
-    color: aliceblue;
+    color: var(--white);
     font-size: 16px;
   }
 
@@ -439,7 +446,7 @@ footer p {
   }
 
   .introduction-container img {
-    border-color: aliceblue;
+    border-color: var(--white);
     border-width: 5px;
     border-style: solid;
     margin-top: 20px;
@@ -508,8 +515,8 @@ footer p {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 1px solid #a00e0e;
-    background-color: #a00e0e;
+    border: 1px solid var(--red);
+    background-color: var(--red);
     position: fixed;
     right: 20px;
     display: flex;
@@ -522,7 +529,7 @@ footer p {
   }
 
   #button-hover {
-    color: aliceblue;
+    color: var(--white);
     font-size: 16px;
   }
 
