@@ -15,27 +15,6 @@ body {
   font-family: 'Arima';
 }
 
-header {
-  background-color: var(--paper);
-  padding: 14px;
-}
-
-.nav-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.nav-container a {
-  text-decoration: none;
-  color: var(--black);
-}
-
-.nav-container a:hover {
-  text-decoration: underline;
-}
-
 .banner-image {
   background-image: url('../img/mount-fuji.jpg');
   background-size: cover;
@@ -54,7 +33,7 @@ header {
 
 .banner-image h2 {
   text-align: center;
-  color: var(--black);
+  color: var(--white);
 }
 
 .introduction-container {
