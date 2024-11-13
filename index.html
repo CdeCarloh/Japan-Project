@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hello Japan</title>
   <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="css/menu.css">
   <link rel="stylesheet" href="css/index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,37 +15,41 @@
 
 <body>
   <header class="header-container">
-    <div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-        stroke-linecap="round" stroke-linejoin="round" width="48" height="48" stroke-width="2">
-        <path d="M4 4c5.333 1.333 10.667 1.333 16 0"></path>
-        <path d="M4 8h16"></path>
-        <path d="M12 5v3"></path>
-        <path d="M18 4.5v15.5"></path>
-        <path d="M6 4.5v15.5"></path>
-      </svg><span class="header-title">Hello Japan</span>
-    </div>
-
-    <ul id="nav-menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#">Travel Guides</a></li>
-      <li><a href="#">Gastronomy</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-
-    <ul id="nav-important-options">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#">Travel Guides</a></li>
-    </ul>
-
-    <div id="nav-hamburger">
+    <a class="nav-icon" href="index.html">
+      <img src="img/icon.jpg" alt="icon">
+    </a>
+    <button class="nav-hamburger-open" id="hamburger-open">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
         stroke-linecap="round" stroke-linejoin="round" width="48" height="48" stroke-width="2">
         <path d="M4 6l16 0"></path>
         <path d="M4 12l16 0"></path>
         <path d="M4 18l16 0"></path>
       </svg>
-    </div>
+    </button>
+    <nav class="nav-container-mobile" id="nav-container-mobile">
+      <button class="nav-hamburger-close" id="hamburger-close">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-linecap="round" stroke-linejoin="round" width="48" height="48" stroke-width="2">
+          <path d="M4 6l16 0"></path>
+          <path d="M4 12l16 0"></path>
+          <path d="M4 18l16 0"></path>
+        </svg>
+      </button>
+      <ul class="nav-list-mobile">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Travel Guides</a></li>
+        <li><a href="#">Gastronomy</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <nav class="nav-container">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Travel Guides</a></li>
+        <li><a href="#">Gastronomy</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <div class="banner-image">
@@ -167,7 +171,7 @@
         d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5" />
     </svg>
   </button>
-  <script src="js/nav-hamburger.js"></script>
+  <script src="js/hamburger.js"></script>
   <script src="js/go-to-top.js"></script>
 </body>
 
