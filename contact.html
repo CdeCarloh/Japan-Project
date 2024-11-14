@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello Japan</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="css/button-up.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header-container">
+    <a class="nav-icon" href="index.html">
+      <img src="img/icon.jpg" alt="icon">
+    </a>
+    <button class="nav-hamburger-open" id="hamburger-open">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-linecap="round" stroke-linejoin="round" width="48" height="48" stroke-width="2">
+        <path d="M4 6l16 0"></path>
+        <path d="M4 12l16 0"></path>
+        <path d="M4 18l16 0"></path>
+      </svg>
+    </button>
+    <nav class="nav-container-mobile" id="nav-container-mobile">
+      <button class="nav-hamburger-close" id="hamburger-close">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-linecap="round" stroke-linejoin="round" width="48" height="48" stroke-width="2">
+          <path d="M4 6l16 0"></path>
+          <path d="M4 12l16 0"></path>
+          <path d="M4 18l16 0"></path>
+        </svg>
+      </button>
+      <ul class="nav-list-mobile">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Travel Guides</a></li>
+        <li><a href="#">Gastronomy</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <nav class="nav-container">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Travel Guides</a></li>
+        <li><a href="#">Gastronomy</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="banner-image">
+    <h1>Contact</h1>
+    <h2>Send Us a Message</h2>
+  </div>
+
+  <section>
+    <form action="" class="form">
+      <div class="camps">
+        <div class="camp">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div class="camp">
+          <label for="surname">Surname</label>
+          <input type="text" name="surname" id="surname">
+        </div>
+        <div class="camp">
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email">
+        </div>
+        <div class="camp">
+          <label for="message">Message</label>
+          <textarea name="message" id="message"></textarea>
+        </div>
+        <div><input id="button-form" type="submit"></div>
+      </div>
+    </form>
+  </section>
+
+  <footer class="footer-container">
+    <div>
+      <h4>Hello Japan</h4>
+      <p>© 2024 All rights deserved.</p>
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <p>Email: info@hellojapan.com</p>
+      <p>Phone Number: +34 611778899</p>
+      <p>Address: Street 123</p>
+    </div>
+    <div>
+      <h5>Media</h5>
+      <p>Print</p>
+      <p>Online</p>
+      <p>Alternative Ads</p>
+    </div>
+    <div>
+      <h5>Technology</h5>
+      <p>Hardware Design</p>
+      <p>Software Design</p>
+      <p>Digital Sinage</p>
+    </div>
+    <div>
+      <h5>Legal</h5>
+      <p>Privacy Policy</p>
+      <p>Terms of Use</p>
+      <p>Sitemap</p>
+    </div>
+    <div>
+      <h5>Created by Carlos Luis Perez Santana</h5>
+    </div>
+  </footer>
+  <button class="button-up" id="up">
+    <svg id="button-hover" xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="currentColor"
+      class="bi bi-arrow-up" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5" />
+    </svg>
+  </button>
+  <script src="js/hamburger.js"></script>
+  <script src="js/go-to-top.js"></script>
+</body>
+
+</html>

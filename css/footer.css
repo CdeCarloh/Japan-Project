@@ -10,6 +10,7 @@
   --red: #a00e0e;
   --black: black;
   --beige: #daded1;
+  --sun:  #f44336;
 }
 
 body {
@@ -19,7 +20,6 @@ body {
 .footer-container {
   padding: 25px;
   margin-top: 20px;
-  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
