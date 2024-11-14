@@ -60,25 +60,30 @@
   </div>
 
   <section>
-    <form action="" class="form">
+    <form action="" class="form" id="form-contact">
       <div class="camps">
         <div class="camp">
           <label for="name">Name</label>
           <input type="text" name="name" id="name">
+          <span id="form-name">* required field</span>
         </div>
         <div class="camp">
           <label for="surname">Surname</label>
           <input type="text" name="surname" id="surname">
+          <span id="form-surname">* required field</span>
         </div>
         <div class="camp">
           <label for="email">Email</label>
           <input type="text" name="email" id="email">
+          <span id="form-email">* required field</span>
+          <span id="form-email-invalid">* invalid email</span>
         </div>
         <div class="camp">
           <label for="message">Message</label>
           <textarea name="message" id="message"></textarea>
+          <span id="form-message">* required field</span>
         </div>
-        <div><input id="button-form" type="submit"></div>
+        <div><input id="button-form" type="submit" value="SEND"></div>
       </div>
     </form>
   </section>
@@ -125,6 +130,7 @@
   </button>
   <script src="js/hamburger.js"></script>
   <script src="js/go-to-top.js"></script>
+  <script src="js/validate.js"></script>
 </body>
 
 </html>

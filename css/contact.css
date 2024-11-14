@@ -15,7 +15,7 @@
 
 body {
   font-family: 'Arima';
-  background-image: linear-gradient(to top, var(--white) 0%, var(--black) 100%);
+  background-image: linear-gradient(to top, var(--white) 0%, var(--beige) 100%);
 }
 
 .banner-image {
@@ -33,6 +33,10 @@ body {
 h2 {
   text-align: center;
   color: var(--white);
+}
+
+.form span {
+  visibility: hidden;
 }
 
 .form {
@@ -63,22 +67,21 @@ h2 {
   font-weight: bold;
 }
 
-.camp input {
-  height: 35px;
+.camp input,
+.camp textarea {
   border: 1px solid var(--paper);
   border-radius: 5px;
+}
+
+.camp input {
+  height: 35px;
 }
 
 .camp textarea {
   height: 130px;
-  border: 1px solid var(--paper);
-  border-radius: 5px;
 }
 
-.camp input:hover {
-  border: 2px solid var(--sun);
-}
-
+.camp input:hover,
 .camp textarea:hover {
   border: 2px solid var(--sun);
 }
@@ -94,36 +97,35 @@ h2 {
   border-radius: 5px;
 }
 
-
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
-    .banner-image {
-      height: 400px;
-    }
-
-    .form {
-      max-width: 400px;
-    }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .banner-image {
+    height: 400px;
   }
 
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-    .banner-image {
-      height: 400px;
-    }
+  .form {
+    max-width: 400px;
+  }
+}
 
-    .form {
-      max-width: 500px;
-    }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .banner-image {
+    height: 400px;
   }
 
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
-    .banner-image {
-      height: 400px;
-    }
-
-    .form {
-      max-width: 600px;
-    }
+  .form {
+    max-width: 500px;
   }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .banner-image {
+    height: 400px;
+  }
+
+  .form {
+    max-width: 600px;
+  }
+}
