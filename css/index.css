@@ -175,26 +175,6 @@ main h2 {
   transform: scale(1.2);
 }
 
-footer p {
-  font-size: 12px;
-}
-
-.footer-container {
-  padding: 25px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-}
-
-.footer-container h4,
-.footer-container h5,
-.footer-container p {
-  text-align: center;
-}
-
 .button-up {
   width: 30px;
   height: 30px;
@@ -285,11 +265,6 @@ footer p {
   #button-hover {
     color: var(--white);
     font-size: 16px;
-  }
-
-  .footer-container {
-    flex-direction: row;
-    justify-content: space-around;
   }
 }
 
@@ -387,11 +362,6 @@ footer p {
     color: var(--white);
     font-size: 16px;
   }
-
-  .footer-container {
-    flex-direction: row;
-    justify-content: space-around;
-  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -485,10 +455,5 @@ footer p {
   #button-hover {
     color: var(--white);
     font-size: 16px;
-  }
-
-  .footer-container {
-    flex-direction: row;
-    justify-content: space-around;
   }
 }
