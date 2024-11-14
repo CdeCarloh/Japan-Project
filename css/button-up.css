@@ -1,0 +1,59 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --paper: #dedede;
+  --white: aliceblue;
+  --red: #a00e0e;
+  --black: black;
+  --beige: #daded1;
+}
+
+body {
+  font-family: 'Arima';
+}
+
+.button-up {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: var(--white);
+  border: 1px solid var(--red);
+  background-color: var(--red);
+  position: fixed;
+  right: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: end;
+  bottom: 50px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .button-up {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .button-up {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .button-up {
+    width: 40px;
+    height: 40px;
+  }
+}

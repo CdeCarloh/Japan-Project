@@ -175,28 +175,6 @@ main h2 {
   transform: scale(1.2);
 }
 
-.button-up {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 1px solid var(--red);
-  background-color: var(--red);
-  position: fixed;
-  right: 20px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: end;
-  bottom: 50px;
-  transition: 0.3s ease;
-  cursor: pointer;
-}
-
-#button-hover {
-  color: var(--white);
-  font-size: 16px;
-}
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
@@ -243,28 +221,6 @@ main h2 {
 
   .gallery-container div {
     flex: 1 1 calc(30% - 10px);
-  }
-
-  .button-up {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 1px solid var(--red);
-    background-color: var(--red);
-    position: fixed;
-    right: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: end;
-    bottom: 50px;
-    transition: 0.3s ease;
-    cursor: pointer;
-  }
-
-  #button-hover {
-    color: var(--white);
-    font-size: 16px;
   }
 }
 
@@ -340,28 +296,6 @@ main h2 {
   .gallery-container div {
     flex: 1 1 calc(22% - 10px);
   }
-
-  .button-up {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 1px solid var(--red);
-    background-color: var(--red);
-    position: fixed;
-    right: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: end;
-    bottom: 50px;
-    transition: 0.3s ease;
-    cursor: pointer;
-  }
-
-  #button-hover {
-    color: var(--white);
-    font-size: 16px;
-  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -433,27 +367,5 @@ main h2 {
 
   .gallery-container div {
     flex: 1 1 calc(22% - 10px);
-  }
-
-  .button-up {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 1px solid var(--red);
-    background-color: var(--red);
-    position: fixed;
-    right: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: end;
-    bottom: 50px;
-    transition: 0.3s ease;
-    cursor: pointer;
-  }
-
-  #button-hover {
-    color: var(--white);
-    font-size: 16px;
   }
 }
