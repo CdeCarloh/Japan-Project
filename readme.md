@@ -6,7 +6,7 @@ Hello Japan is a website designed as a wiki for those interested in traveling to
 
 ## Getting Started
 
-Just create a new folder called "HTML-FORM" for instance, and clone this project.
+Just create a new folder and clone this project.
 
 It's also important that you use the visual studio code plugin called "Live Server". Once you have installed this plugin, right click on index.html and left click on "Open with Live Server".
 
