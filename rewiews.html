@@ -59,10 +59,7 @@
     <h2>Write your Experience here</h2>
   </div>
 
-  <h1>All rewiews</h1>
-  <div id="rewiews-list">
-
-  </div>
+  <h1 id="h1-rewiews">All rewiews</h1>
 
   <section>
     <form action="" class="form" id="form-rewiews">
@@ -82,10 +79,11 @@
           <input type="text" name="author" id="author">
           <span id="form-author">* required field</span>
         </div>
-        <div><input id="button-form" type="submit" value="SEND"></div>
+        <div><input id="button-form" type="submit" value="SEND" onclick="showRewiewsList()"></div>
       </div>
     </form>
   </section>
+  <div id="rewiews-list"></div>
 
   <footer class="footer-container">
     <div>
@@ -120,9 +118,17 @@
       <h5>Created by Carlos Luis Perez Santana</h5>
     </div>
   </footer>
+  <button class="button-up" id="up">
+    <svg id="button-hover" xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="currentColor"
+      class="bi bi-arrow-up" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5" />
+    </svg>
+  </button>
   <script src="js/hamburger.js"></script>
   <script src="js/go-to-top.js"></script>
   <script src="js/rewiews-validate.js"></script>
+  <script src="js/rewiews-register.js"></script>i
 </body>
 
 </html>
