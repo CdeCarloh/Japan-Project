@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hello Japan</title>
   <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="css/button-up.css">
+  <link rel="stylesheet" href="css/rewiews.css">
   <link rel="stylesheet" href="css/menu.css">
-  <link rel="stylesheet" href="css/show-data.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,25 +54,38 @@
     </nav>
   </header>
 
-  <h1>Thank you for contacting us</h1>
-  <div class="data-container">
-    <div>
-      <p class="data-item">Name:</p>
-      <p class="data-value" id="name"></p>
-    </div>
-    <div>
-      <p class="data-item">Surname:</p>
-      <p class="data-value" id="surname"></p>
-    </div>
-    <div>
-      <p class="data-item">Email:</p>
-      <p class="data-value" id="email"></p>
-    </div>
-    <div>
-      <p class="data-item">Message:</p>
-      <p class="data-value" id="message"></p>
-    </div>
+  <div class="banner-image">
+    <h1>Rewiews</h1>
+    <h2>Write your Experience here</h2>
   </div>
+
+  <h1>All rewiews</h1>
+  <div id="rewiews-list">
+
+  </div>
+
+  <section>
+    <form action="" class="form" id="form-rewiews">
+      <div class="camps">
+        <div class="camp">
+          <label for="title">Title</label>
+          <input type="text" name="title" id="title">
+          <span id="form-title">* required field</span>
+        </div>
+        <div class="camp">
+          <label for="content">Content</label>
+          <textarea name="content" id="content"></textarea>
+          <span id="form-content">* required field</span>
+        </div>
+        <div class="camp">
+          <label for="author">Author</label>
+          <input type="text" name="author" id="author">
+          <span id="form-author">* required field</span>
+        </div>
+        <div><input id="button-form" type="submit" value="SEND"></div>
+      </div>
+    </form>
+  </section>
 
   <footer class="footer-container">
     <div>
@@ -107,7 +121,8 @@
     </div>
   </footer>
   <script src="js/hamburger.js"></script>
-  <script src="js/show-data.js"></script>
+  <script src="js/go-to-top.js"></script>
+  <script src="js/rewiews-validate.js"></script>
 </body>
 
 </html>

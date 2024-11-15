@@ -1,6 +1,6 @@
 function listenForValidation() {
-  const PERSONAL_DATA_FORM = document.getElementById("form-contact");
-  PERSONAL_DATA_FORM.addEventListener("submit", validateFormContact);
+  const personalDataForm = document.getElementById("form-contact");
+  personalDataForm.addEventListener("submit", validateFormContact);
 }
 
 function validateFormContact(e) {
@@ -31,17 +31,11 @@ function validateFormContact(e) {
     valid = false;
   } else document.getElementById("form-email").style.visibility = "hidden";
 
-  if (EMAIL && !validateEmail()) {
-    document.getElementById("form-email-invalid").style.visibility = "visible";
-    valid = false;
-  } else document.getElementById("form-email").style.visibility = "hidden";
-
   if (!MESSAGE) {
     document.getElementById("form-message").style.visibility = "visible";
     valid = false;
-  } else {
-    document.getElementById("form-message").style.visibility = "hidden";
-  }
+  } else document.getElementById("form-message").style.visibility = "hidden";
+
 
   if (!valid) {
     e.preventDefault();
@@ -50,21 +44,11 @@ function validateFormContact(e) {
   }
 }
 
-function saveData(name, surname, email, message) {
-  localStorage.setItem("name", name);
-  localStorage.setItem("surname", surname);
-  localStorage.setItem("email", email);
-  localStorage.setItem("message", message);
-}
-
-function validateEmail() {
-  var emailField = document.getElementById('email');
-  var validEmail = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
-  if (validEmail.test(emailField.value)) {
-    return true;
-  } else {
-    return false;
-  }
+function saveData(NAME, SURNAME, EMAIL, MESSAGE) {
+  localStorage.setItem("name", NAME);
+  localStorage.setItem("surname", SURNAME);
+  localStorage.setItem("email", EMAIL);
+  localStorage.setItem("message", MESSAGE);
 }
 
 listenForValidation();
