@@ -20,7 +20,7 @@ function showRewiewsList() {
   const REWIEWS_LIST = document.getElementById("rewiews-list");
 
   let rewiewsToShow = ""
-  for(let  i = 0; i < rewiews.length; i++) {
+  for (let i = 0; i < rewiews.length; i++) {
     rewiewsToShow += `
     <div>
       <h3>${rewiews[i].title}</h3>

@@ -10,7 +10,7 @@
   --red: #a00e0e;
   --black: black;
   --beige: #daded1;
-  --sun:  #f44336;
+  --sun: #f44336;
 }
 
 body {
@@ -29,7 +29,8 @@ body {
   justify-content: center;
 }
 
-.banner-image h1, h2 {
+.banner-image h1,
+h2 {
   text-align: center;
   color: var(--white);
 }
