@@ -49,6 +49,7 @@ function validateFormContact(e) {
 
   if (valid) {
     saveData(name, surname, email, message);
+    window.location.href = "show-data.html"
   }
 }
 
