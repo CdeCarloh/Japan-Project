@@ -6,7 +6,7 @@
 
 :root {
   --paper: #dedede;
-  --white: aliceblue;
+  --white: white;
   --red: #a00e0e;
   --black: black;
   --beige: #daded1;
@@ -33,6 +33,11 @@ body {
   bottom: 50px;
   transition: 0.3s ease;
   cursor: pointer;
+}
+
+.button-up:hover {
+  background-color: var(--sun);
+  border: var(--sun);
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

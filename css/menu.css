@@ -6,7 +6,7 @@
 
 :root {
   --paper: #dedede;
-  --white: aliceblue;
+  --white: white;
   --red: #a00e0e;
   --black: black;
   --beige: #daded1;
@@ -18,7 +18,7 @@ body {
 }
 
 .header-container {
-  background-color: var(--beige);
+  background-color: var(--paper);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -44,13 +44,13 @@ body {
 }
 
 .nav-hamburger-open {
-  background-color: var(--beige);
+  background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
 .nav-hamburger-close {
-  background-color: var(--beige);
+  background-color: transparent;
   border: none;
   cursor: pointer;
   margin-top: 10px;
@@ -67,7 +67,7 @@ body {
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--beige);
+  background-color: var(--paper);
   padding: 20px 20px 10px 40px;
   visibility: hidden;
 }
@@ -93,6 +93,10 @@ body {
 }
 
 .nav-list-mobile li a:hover {
+  text-decoration: underline;
+}
+
+.nav-list li a:hover {
   text-decoration: underline;
 }
 
@@ -133,10 +137,6 @@ body {
     font-weight: bold;
     font-size: 18px;
   }
-
-  .nav-list li a:hover {
-    text-decoration: underline;
-  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -168,9 +168,5 @@ body {
     color: var(--black);
     font-weight: bold;
     font-size: 18px;
-  }
-
-  .nav-list li a:hover {
-    text-decoration: underline;
   }
 }

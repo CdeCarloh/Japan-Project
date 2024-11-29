@@ -6,7 +6,7 @@
 
 :root {
   --paper: #dedede;
-  --white: aliceblue;
+  --white: white;
   --red: #a00e0e;
   --black: black;
   --beige: #daded1;
@@ -15,7 +15,7 @@
 
 body {
   font-family: 'Arima';
-  background-image: linear-gradient(to top, var(--white) 0%, var(--beige) 100%);
+  background-color: var(--paper);
 }
 
 .banner-image {
