@@ -112,17 +112,52 @@ h2 {
 }
 
 .modal-window {
-  position: relative;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--black);
+  opacity: 0.8;
+  width: 100vw;
+  height: 100vh;
 }
 
-.modal-window {
+.modal-content {
   position: relative;
   width: 80%;
   margin: auto;
+  padding: 20px 40px;
+  border-radius: 15px;
+  background-color: var(--white);
 }
 
-.modal-window h2 {
+.modal-content h2 {
   color: var(--black);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.modal-content div {
+  line-height: 1.8;
+}
+
+.button-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: var(--red);
+  color: var(--white);
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-close:hover {
+  background-color: var(--sun);
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
