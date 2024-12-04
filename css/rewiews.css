@@ -9,7 +9,7 @@
   --white: white;
   --red: #a00e0e;
   --black: black;
-  --beige: #daded1;
+  --sky: #f6fcfb;
   --sun: #f44336;
 }
 
@@ -61,7 +61,7 @@ h2 {
 }
 
 .form {
-  background-color: var(--paper);
+  background-color: var(--white);
   border-radius: 10px;
   padding: 20px;
   max-width: 300px;
@@ -90,7 +90,8 @@ h2 {
 
 .camp input,
 .camp textarea {
-  border: 1px solid var(--paper);
+  background-color: var(--sky);
+  border: 1px solid var(--black);
   border-radius: 5px;
 }
 
