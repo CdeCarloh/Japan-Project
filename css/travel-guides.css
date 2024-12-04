@@ -111,6 +111,19 @@ h2 {
   background-color: var(--sun);
 }
 
+.modal-window {
+  position: relative;
+}
+
+.modal-window {
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+.modal-window h2 {
+  color: var(--black);
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
