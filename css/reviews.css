@@ -47,7 +47,7 @@ h2 {
   font-size: 20px;
 }
 
-#h1-rewiews {
+#h1-reviews {
   text-align: center;
   margin: 20px auto 40px auto;
 }
@@ -123,7 +123,7 @@ h2 {
   border: 2px solid var(--red);
 }
 
-#rewiews-list {
+#reviews-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -136,7 +136,7 @@ h2 {
   box-shadow: 0px 0px 43px 6px rgba(0, 0, 0, 0.29);
 }
 
-#rewiews-list>div {
+#reviews-list>div {
   background-color: var(--white);
   padding: 15px;
   border-radius: 5px;

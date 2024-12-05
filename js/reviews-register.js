@@ -1,4 +1,4 @@
-let rewiews = [
+let reviews = [
   {
     title: "Ascenso al Monte Fuji",
     content: "Subí al Monte Fuji y llegué hasta la quinta estación. Ver el amanecer desde la cima fue indescriptible. El esfuerzo valió la pena por las vistas panorámicas que se podían disfrutar desde la cumbre.",
@@ -16,44 +16,44 @@ let rewiews = [
   },
 ]
 
-function showRewiewsList() {
-  const REWIEWS_LIST = document.getElementById("rewiews-list");
+function showReviewsList() {
+  const REVIEWS_LIST = document.getElementById("reviews-list");
 
-  let rewiewsToShow = ""
-  for (let i = 0; i < rewiews.length; i++) {
-    rewiewsToShow += `
+  let reviewsToShow = ""
+  for (let i = 0; i < reviews.length; i++) {
+    reviewsToShow += `
     <div>
-      <h3>${rewiews[i].title}</h3>
-      <p>${rewiews[i].content}</p>
-      <p>${rewiews[i].author}</p>
+      <h3>${reviews[i].title}</h3>
+      <p>${reviews[i].content}</p>
+      <p>${reviews[i].author}</p>
     </div>
     `
   }
-  REWIEWS_LIST.innerHTML = rewiewsToShow;
+  REVIEWS_LIST.innerHTML = reviewsToShow;
 }
 
 function listenForSubmit() {
-  const REWIEWS_REGISTER = document.getElementById("form-rewiews");
-  REWIEWS_REGISTER.addEventListener("submit", introduceNewRewiewAndShow);
+  const REVIEWS_REGISTER = document.getElementById("form-reviews");
+  REVIEWS_REGISTER.addEventListener("submit", introduceNewReviewAndShow);
 }
 
-function introduceNewRewiew(e) {
+function introduceNewReview(e) {
   e.preventDefault()
   const TITLE = e.target.title.value;
   const CONTENT = e.target.content.value;
   const AUTHOR = e.target.author.value;
 
-  rewiews.push({
+  reviews.push({
     title: TITLE,
     content: CONTENT,
     author: AUTHOR
   })
 }
 
-function introduceNewRewiewAndShow(e) {
-  introduceNewRewiew(e)
-  showRewiewsList()
+function introduceNewReviewAndShow(e) {
+  introduceNewReview(e)
+  showReviewsList()
 }
 
-showRewiewsList()
+showReviewsList()
 listenForSubmit()
