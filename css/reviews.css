@@ -76,18 +76,17 @@ h2 {
 #add-review {
   cursor: pointer;
   background-color: var(--sun);
-  display: flex;
-  margin: auto;
+  display: block;
+  margin: 10px auto;
+  width: 20%;
   padding: 10px;
   border: none;
-  border-radius: 5px;
-}
-
-#add-review a {
+  border-radius: 15px;
   text-decoration: none;
   color: var(--white);
   text-transform: uppercase;
   font-weight: bold;
+  text-align: center;
 }
 
 #add-review:hover {
