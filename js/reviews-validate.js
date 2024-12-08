@@ -1,6 +1,6 @@
 function listenForValidation() {
-  const rewiewsDataForm = document.getElementById("form-reviews");
-  rewiewsDataForm.addEventListener("submit", validateFormReviews);
+  const REVIEWS_DATA_FORM = document.getElementById("form-reviews");
+  REVIEWS_DATA_FORM.addEventListener("submit", validateFormReviews);
 }
 
 function validateFormReviews(e) {
