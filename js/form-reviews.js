@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const REVIEWS = JSON.parse(localStorage.getItem('reviews')) || [];
     REVIEWS.push({ TITLE, CONTENT, AUTHOR });
-    localStorage.setItem('reviews', JSON.stringify(reviews));
+    localStorage.setItem('reviews', JSON.stringify(REVIEWS));
 
     window.location.href = 'reviews.html';
   });

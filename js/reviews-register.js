@@ -5,14 +5,13 @@ function renderReviews() {
   const CONTAINER = document.getElementById('reviews-list');
 
   CONTAINER.innerHTML = '';
-
   REVIEWS.forEach((review, index) => {
     const reviewCard = document.createElement('div');
     reviewCard.className = 'review-card';
     reviewCard.innerHTML = `
-      <h3>${review.title}</h3>
-      <p>${review.content}</p>
-      <p><strong>${review.author}</strong></p>
+      <h3>${review.TITLE}</h3>
+      <p>${review.CONTENT}</p>
+      <p><strong>${review.AUTHOR}</strong></p>
       <div class="actions">
         <button onclick="editReview(${index})">Editar</button>
         <button onclick="deleteReview(${index})">Eliminar</button>
@@ -24,7 +23,7 @@ function renderReviews() {
 
 function editReview(index) {
   localStorage.setItem('editIndex', index);
-  window.location.href = 'form-reviews.html';
+  window.location.href = 'edit-reviews.html';
 }
 
 function deleteReview(index) {
