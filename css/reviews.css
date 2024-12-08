@@ -47,9 +47,10 @@ h2 {
   font-size: 20px;
 }
 
-#h1-reviews {
+#h2-reviews {
   text-align: center;
-  margin: 20px auto 40px auto;
+  color: var(--black);
+  margin: 20px auto 0 auto;
 }
 
 #reviews-list {
@@ -69,6 +70,27 @@ h2 {
   background-color: var(--white);
   padding: 15px;
   border-radius: 5px;
+}
+
+#add-review {
+  cursor: pointer;
+  background-color: var(--sun);
+  display: flex;
+  margin: auto;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+#add-review a {
+  text-decoration: none;
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#add-review:hover {
+  border: 2px solid var(--red);
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
