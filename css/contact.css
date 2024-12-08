@@ -20,7 +20,7 @@ body {
 
 .banner-image {
   background-image: url('../img/banner-image-2.jpg');
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
   height: 300px;

@@ -20,7 +20,7 @@ body {
 
 .banner-image {
   background-image: url('../img/banner-image-3.jpg');
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
   height: 300px;
@@ -57,10 +57,10 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin: 70px 20px 40px 20px;
+  margin: 30px 20px 30px 20px;
   padding: 20px;
   background-color: var(--paper);
-  border-radius: 5px;
+  border-radius: 15px;
   -webkit-box-shadow: 0px 0px 43px 6px rgba(0, 0, 0, 0.29);
   -moz-box-shadow: 0px 0px 43px 6px rgba(0, 0, 0, 0.29);
   box-shadow: 0px 0px 43px 6px rgba(0, 0, 0, 0.29);
@@ -69,7 +69,8 @@ h2 {
 #reviews-list>div {
   background-color: var(--white);
   padding: 15px;
-  border-radius: 5px;
+  word-wrap: break-word;
+  border-radius: 15px;
 }
 
 #add-review {

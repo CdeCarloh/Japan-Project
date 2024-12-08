@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/menu.css">
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/animations.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap" rel="stylesheet">
@@ -59,13 +60,13 @@
     <h2>Your Adventure Begins Here!</h2>
   </div>
 
-  <div class="introduction-container">
+  <div class="introduction-container scroll-animate">
     <img src="img/introduction.jpg" alt="japan">
     <p>Welcome to our wiki about Japan, your essential resource for exploring the rich culture, landscapes, and unique
       experiences of this fascinating destination. Find information on what to do, what to see, and enjoy a gallery of
       images that capture the essence of Japan. Get ready for your adventure!</p>
   </div>
-  <div class="icons-container">
+  <div class="icons-container scroll-animate">
     <svg class="icons-hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
       stroke-linecap="round" stroke-linejoin="round" width="75" height="75" stroke-width="2">
       <path d="M12 18.5l-3 -1.5l-6 3v-13l6 -3l6 3l6 -3v7.5"></path>
@@ -91,34 +92,34 @@
     </svg>
   </div>
   <main>
-    <h2>Top Things to do</h2>
-    <div class="osaka-container">
+    <h2 class="scroll-animate">Top Things to do</h2>
+    <div class="osaka-container scroll-animate">
       <img src="img/osaka.jpg" alt="osaka">
       <p>Discover the vibrant streets of Osaka, famous for its restaurants and shops. Enjoy the local culture, try
         delicacies like takoyaki and okonomiyaki, and marvel at the iconic neon signs illuminating the city. A unique
         experience to immerse yourself in Osaka's urban life.</p>
     </div>
-    <div class="itomori-container-mobile">
+    <div class="itomori-container-mobile scroll-animate">
       <img src="img/itomori.jpg" alt="itomori">
       <p>Explore the picturesque village of Itomori, famous for its beautiful lake and stunning mountainous landscape.
         Inspired by the movie "Your Name," stroll through its streets and enjoy the views that served as a backdrop for
         the story.</p>
     </div>
-    <div class="itomori-container">
+    <div class="itomori-container scroll-animate">
       <p>Explore the picturesque village of Itomori, famous for its beautiful lake and stunning mountainous landscape.
         Inspired by the movie "Your Name," stroll through its streets and enjoy the views that served as a backdrop for
         the story.</p>
       <img src="img/itomori.jpg" alt="itomori">
     </div>
-    <div class="kumano-container">
+    <div class="kumano-container scroll-animate">
       <img src="img/kumano.jpg" alt="kumano">
       <p>Embark on a hike along the Kumano Kodo Trail.This path will take you through dense forests, mountains, and
         serene landscapes while exploring historic temples and shrines such as the Kumano Hongu Taisha Shrine.</p>
     </div>
   </main>
   <section>
-    <h2 id="gallery-title">Gallery</h2>
-    <div class="gallery-container">
+    <h2 id="gallery-title" class="scroll-animate">Gallery</h2>
+    <div class="gallery-container scroll-animate">
       <div><img src="img/image-1.jpg" alt="image-1"></div>
       <div><img src="img/image-2.jpg" alt="image-2"></div>
       <div><img src="img/image-3.jpg" alt="image-3"></div>
@@ -175,6 +176,7 @@
   </button>
   <script src="js/hamburger.js"></script>
   <script src="js/go-to-top.js"></script>
+  <script src="js/animations.js"></script>
 </body>
 
 </html>
