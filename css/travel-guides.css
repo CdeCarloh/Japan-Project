@@ -186,15 +186,15 @@ h2 {
   #modal-window-tokyo {
     top: 500px;
   }
-  
+
   #modal-window-kyoto {
     top: 880px;
   }
-  
+
   #modal-window-osaka {
     top: 1330px;
   }
-  
+
   #modal-window-hokkaido {
     top: 1720px;
   }
@@ -225,7 +225,7 @@ h2 {
     right: 0;
     left: 0;
   }
-  
+
   #modal-window-kyoto {
     position: fixed;
     top: 0;
@@ -233,7 +233,7 @@ h2 {
     right: 0;
     left: 0;
   }
-  
+
   #modal-window-osaka {
     position: fixed;
     top: 0;
@@ -241,7 +241,7 @@ h2 {
     right: 0;
     left: 0;
   }
-  
+
   #modal-window-hokkaido {
     position: fixed;
     top: 0;
@@ -281,7 +281,7 @@ h2 {
     right: 0;
     left: 0;
   }
-  
+
   #modal-window-kyoto {
     position: fixed;
     top: 0;
@@ -289,7 +289,7 @@ h2 {
     right: 0;
     left: 0;
   }
-  
+
   #modal-window-osaka {
     position: fixed;
     top: 0;
@@ -297,7 +297,7 @@ h2 {
     right: 0;
     left: 0;
   }
-  
+
   #modal-window-hokkaido {
     position: fixed;
     top: 0;

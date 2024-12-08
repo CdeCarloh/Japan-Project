@@ -27,8 +27,8 @@ function editReview(index) {
 }
 
 function deleteReview(index) {
-  const reviews = JSON.parse(localStorage.getItem('reviews')) || [];
-  reviews.splice(index, 1);
-  localStorage.setItem('reviews', JSON.stringify(reviews));
+  const REVIEWS = JSON.parse(localStorage.getItem('reviews')) || [];
+  REVIEWS.splice(index, 1);
+  localStorage.setItem('reviews', JSON.stringify(REVIEWS));
   renderReviews();
 }

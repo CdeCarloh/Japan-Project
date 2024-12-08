@@ -22,35 +22,35 @@ function closeModal(modalId) {
   document.getElementById(modalId).style.display = "none";
 }
 
-document.getElementById(BUTTON_OPEN_TOKYO).addEventListener("click", function() {
+document.getElementById(BUTTON_OPEN_TOKYO).addEventListener("click", function () {
   openModal(MODAL_WINDOW_TOKYO);
 });
 
-document.getElementById(BUTTON_CLOSE_TOKYO).addEventListener("click", function() {
+document.getElementById(BUTTON_CLOSE_TOKYO).addEventListener("click", function () {
   closeModal(MODAL_WINDOW_TOKYO);
 });
 
-document.getElementById(BUTTON_OPEN_KYOTO).addEventListener("click", function() {
+document.getElementById(BUTTON_OPEN_KYOTO).addEventListener("click", function () {
   openModal(MODAL_WINDOW_KYOTO);
 });
 
-document.getElementById(BUTTON_CLOSE_KYOTO).addEventListener("click", function() {
+document.getElementById(BUTTON_CLOSE_KYOTO).addEventListener("click", function () {
   closeModal(MODAL_WINDOW_KYOTO);
 });
 
-document.getElementById(BUTTON_OPEN_OSAKA).addEventListener("click", function() {
+document.getElementById(BUTTON_OPEN_OSAKA).addEventListener("click", function () {
   openModal(MODAL_WINDOW_OSAKA);
 });
 
-document.getElementById(BUTTON_CLOSE_OSAKA).addEventListener("click", function() {
+document.getElementById(BUTTON_CLOSE_OSAKA).addEventListener("click", function () {
   closeModal(MODAL_WINDOW_OSAKA);
 });
 
-document.getElementById(BUTTON_OPEN_HOKKAIDO).addEventListener("click", function() {
+document.getElementById(BUTTON_OPEN_HOKKAIDO).addEventListener("click", function () {
   openModal(MODAL_WINDOW_HOKKAIDO);
 });
 
-document.getElementById(BUTTON_CLOSE_HOKKAIDO).addEventListener("click", function() {
+document.getElementById(BUTTON_CLOSE_HOKKAIDO).addEventListener("click", function () {
   closeModal(MODAL_WINDOW_HOKKAIDO);
 });
 
