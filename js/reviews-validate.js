@@ -1,46 +1,26 @@
-function listenForValidation() {
-  const REVIEWS_DATA_FORM = document.getElementById("form-reviews");
-  REVIEWS_DATA_FORM.addEventListener("submit", validateFormReviews);
-}
-
-function validateFormReviews(e) {
-
-  const TITLE = e.target.title.value;
-  const CONTENT = e.target.content.value;
-  const AUTHOR = e.target.author.value;
-
+function validateReview(title, description, author) {
   let valid = true;
 
-  if (!TITLE) {
+  if (!title.trim()) {
     document.getElementById("form-title").style.visibility = "visible";
     valid = false;
   } else {
     document.getElementById("form-title").style.visibility = "hidden";
   }
 
-  if (!CONTENT) {
+  if (!description.trim()) {
     document.getElementById("form-content").style.visibility = "visible";
     valid = false;
   } else {
     document.getElementById("form-content").style.visibility = "hidden";
   }
 
-  if (!AUTHOR) {
+  if (!author.trim()) {
     document.getElementById("form-author").style.visibility = "visible";
     valid = false;
-  } else document.getElementById("form-author").style.visibility = "hidden";
-
-  if (!valid) {
-    e.preventDefault();
   } else {
-    saveData(TITLE, CONTENT, AUTHOR);
+    document.getElementById("form-author").style.visibility = "hidden";
   }
-}
 
-function saveData(TITLE, CONTENT, AUTHOR) {
-  localStorage.setItem("title", TITLE);
-  localStorage.setItem("content", CONTENT);
-  localStorage.setItem("author", AUTHOR);
+  return valid;
 }
-
-listenForValidation();

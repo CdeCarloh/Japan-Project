@@ -1,59 +1,35 @@
-let reviews = [
-  {
-    title: "Ascenso al Monte Fuji",
-    content: "Subí al Monte Fuji y llegué hasta la quinta estación. Ver el amanecer desde la cima fue indescriptible. El esfuerzo valió la pena por las vistas panorámicas que se podían disfrutar desde la cumbre.",
-    author: "Carlos Martínez Sánchez"
-  },
-  {
-    title: "Descubriendo los Jardines Kenroku-en",
-    content: "Recorrí los jardines Kenroku-en en Kanazawa, uno de los tres jardines más famosos de Japón. Pasear por sus senderos rodeados de naturaleza fue muy relajante, especialmente en primavera, cuando los cerezos estaban en flor.",
-    author: "María Rodríguez Pérez"
-  },
-  {
-    title: "Explorando el Mercado de Tsukiji",
-    content: "Visité el Mercado de Tsukiji en Tokio, donde vi la famosa subasta de atunes y probé sushi fresco directo de los puestos. Fue una experiencia única para los amantes de la comida y una excelente manera de comenzar el día.",
-    author: "Juan Pablo García López"
-  },
-]
+document.addEventListener('DOMContentLoaded', renderReviews);
 
-function showReviewsList() {
-  const REVIEWS_LIST = document.getElementById("reviews-list");
+function renderReviews() {
+  const reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+  const container = document.getElementById('reviews-list');
 
-  let reviewsToShow = ""
-  for (let i = 0; i < reviews.length; i++) {
-    reviewsToShow += `
-    <div>
-      <h3>${reviews[i].title}</h3>
-      <p>${reviews[i].content}</p>
-      <p>${reviews[i].author}</p>
-    </div>
-    `
-  }
-  REVIEWS_LIST.innerHTML = reviewsToShow;
+  container.innerHTML = ''; // Limpiar contenedor
+
+  reviews.forEach((review, index) => {
+    const reviewCard = document.createElement('div');
+    reviewCard.className = 'review-card';
+    reviewCard.innerHTML = `
+      <h3>${review.title}</h3>
+      <p>${review.content}</p>
+      <p>${review.author}</p>
+      <div class="actions">
+        <button onclick="editReview(${index})">Editar</button>
+        <button onclick="deleteReview(${index})">Eliminar</button>
+      </div>
+    `;
+    container.appendChild(reviewCard);
+  });
 }
 
-function listenForSubmit() {
-  const REVIEWS_REGISTER = document.getElementById("form-reviews");
-  REVIEWS_REGISTER.addEventListener("submit", introduceNewReviewAndShow);
+function editReview(index) {
+  localStorage.setItem('editIndex', index);
+  window.location.href = 'form-reviews.html';
 }
 
-function introduceNewReview(e) {
-  e.preventDefault()
-  const TITLE = e.target.title.value;
-  const CONTENT = e.target.content.value;
-  const AUTHOR = e.target.author.value;
-
-  reviews.push({
-    title: TITLE,
-    content: CONTENT,
-    author: AUTHOR
-  })
+function deleteReview(index) {
+  const reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+  reviews.splice(index, 1); // Eliminar la review seleccionada
+  localStorage.setItem('reviews', JSON.stringify(reviews));
+  renderReviews(); // Actualizar vista
 }
-
-function introduceNewReviewAndShow(e) {
-  introduceNewReview(e)
-  showReviewsList()
-}
-
-showReviewsList()
-listenForSubmit()
